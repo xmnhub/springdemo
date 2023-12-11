@@ -1,1 +1,16 @@
-三大师傅
+package com.example.demo;
+
+import com.example.demo.hello.HelloWorld;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+
+@SpringBootApplication
+@EnableConfigurationProperties(value = {HelloWorld.class})
+public class Demo4Application {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Demo4Application.class, args);
+    }
+
+}
